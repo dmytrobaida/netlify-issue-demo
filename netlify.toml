@@ -1,0 +1,10 @@
+[[plugins]]
+    package = "@netlify/plugin-nextjs"
+
+[functions]
+    directory = "functions/src"
+
+[dev]
+    command = "yarn workspace web dev"
+    framework = "next"
+    publish = "web/.next"

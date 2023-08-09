@@ -1,0 +1,20 @@
+{
+  "name": "netlify-issue-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "^15.11.0"
+  },
+  "dependencies": {
+    "@netlify/plugin-nextjs": "^4.39.3"
+  },
+  "workspaces": [
+    "functions",
+    "web"
+  ]
+}
