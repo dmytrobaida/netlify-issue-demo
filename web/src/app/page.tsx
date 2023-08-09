@@ -25,7 +25,15 @@ export default function Home() {
           >
             Call function (working)
           </button>
-          <button onClick={() => signIn("facebook")}>
+          <button
+            onClick={async () => {
+              try {
+                await signIn("facebook");
+              } catch (e: any) {
+                alert(e.message);
+              }
+            }}
+          >
             Call next-auth (not working)
           </button>
         </div>
